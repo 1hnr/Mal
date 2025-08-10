@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="146223" async data-cfasync="false"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MODDED APPS LIST</title>
+<style>
+  :root{
+    --bg:#0f0f10;
+    --card:#141416;
+    --muted:#bfc3c7;
+    --accent:#00e676;
+    --gap:6px;
+    --icon-size:56px; /* change to 48px for even smaller */
+  }
+
+  /* page */
+  html,body{height:100%;margin:0;font-family:Inter, system-ui, Arial; background:var(--bg); color:#eee}
+  header{padding:10px 12px;background:#111;border-bottom:1px solid rgba(255,255,255,0.03)}
+  header h1{font-size:13px;margin:0;color:var(--accent);letter-spacing:0.6px}
+  main{padding:8px}
+
+  /* compact grid container */
+  .app-container{
+    display:grid;
+    gap:var(--gap);
+    /* try to show 8 columns on sufficiently wide phones */
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    align-items:start;
+    width:100%;
+    overflow-x:auto; /* fallback: horizontal scroll if not enough space */
+    padding-bottom:6px;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  /* app card (very compact) */
+  .app-box{
+    background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    border-radius:8px;
+    padding:8px 6px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    min-width:64px; /* ensures reasonable tap target */
+    box-sizing:border-box;
+    border:1px solid rgba(255,255,255,0.03);
+    user-select:none;
+  }
+
+  .app-box img{
+    width:var(--icon-size);
+    height:var(--icon-size);
+    object-fit:cover;
+    border-radius:12px;
+    display:block;
+    flex-shrink:0;
+  }
+
+  .app-title{
+    font-size:11px;
+    line-height:1.1;
+    color:var(--muted);
+    text-align:center;
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  .app-actions{
+    display:flex;
+    gap:6px;
+    align-items:center;
+  }
+
+  .btn{
+    font-size:11px;
+    padding:6px 8px;
+    border-radius:6px;
+    text-decoration:none;
+    color:#fff;
+    background:#d32f2f;
+    display:inline-block;
+  }
+  .btn:active{transform:scale(.98)}
+  .small-txt{font-size:10px;color:#999;margin-top:4px}
+
+  /* keyboard / focus */
+  .app-box:focus-within, .app-box:focus{
+    outline:3px solid rgba(0,230,118,0.12);
+    box-shadow:0 0 0 4px rgba(0,230,118,0.04);
+  }
+  .app-box a:focus{outline:2px solid rgba(255,255,255,0.06);border-radius:4px}
+
+  /* responsive fallbacks */
+  @media (max-width:1000px){
+    /* if viewport can't fit all 8 columns, grid will scroll horizontally */
+    .app-container{grid-auto-flow:column; grid-auto-columns: calc(100%/4);}
+    /* show 4 per column "page" width by default on smaller devices */
+    .app-box{min-width:72px}
+  }
+
+  @media (max-width:480px){
+    :root{--icon-size:48px}
+    .app-container{grid-auto-columns: calc(100%/3);} /* 3 per viewport width on tiny phones */
+    .app-box{min-width:64px;padding:6px}
+    header h1{font-size:12px}
+  }
+
+  /* optional very compact style (uncomment to enable) */
+  /* .app-box img{border-radius:10px} .btn{padding:4px 6px;font-size:10px} */
+</style>
+</head>
+<body>
+  <header>
+    <h1>MODDED APP LIST</h1>
+  </header>
+
+  <main>
+    <!-- Grid will try to display 8 columns across.
+         If viewport can't fit them it becomes horizontally scrollable.
+         You can adjust --icon-size or media queries to make it even smaller. -->
+    <div class="app-container" role="list" aria-label="Apps">
+      <!-- Example app entry -->
+      
+      <div class="app-box" role="listitem" tabindex="0" aria-label="Moviebox mod">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtDie7YzIljosKYxQq2bRLGrnJOWZcKVq90w&s" alt="Moviebox">
+        <div class="app-title">Moviebox mod</div>
+        
+        <div class="app-actions">
+          <a class="btn" href="https://devuploads.com/14hpmj77as98" target="_blank" rel="">Download</a>
+        </div>
+      </div>
+
+      <div class="app-box" role="listitem" tabindex="0" aria-label="Dramabox mod">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHqUn3sk5spofvCdMQ9AROlgL44Fpog8hX6kucQ4F71zzZjg02BDehL09x&s=10" alt="DramaBox">
+        <div class="app-title">Dramabox mod</div>
+        <div class="app-actions">
+          <a class="btn" href="https://www.mediafire.com/file/cjk3i0iddspmdg8/DramaBox_3.3.2.apk/file" target="_blank" rel="noopener">Download</a>
+        </div>
+      </div>
+
+      <div class="app-box" role="listitem" tabindex="0" aria-label="Prime Video">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Amazon_Prime_Video_logo_%282024%29.svg/1024px-Amazon_Prime_Video_logo_%282024%29.svg.png" alt="Prime Video">
+        <div class="app-title">Prime Video</div>
+        <div class="app-actions">
+          <a class="btn" href="https://devuploads.com/of13w8be1ndt
+" target="_blank" rel="noopener">Download</a>
+        </div>
+      </div>
+      <div class="app-box" role="listitem" tabindex="0" aria-label="Anime Play">
+        <img src="https://play-lh.googleusercontent.com/9voKra-kI9N26HUl_n1WdvAjwtvnCjpzCM-5u-cBnk3xdwJR8h1M-uYHwNNREHFoeMw" alt="Anime Play">
+        <div class="app-title">Anime Play</div>
+        <div class="app-actions">
+          <a class="btn" href="https://devuploads.com/t5unoz7bf8oz" rel="noopener">Download</a>
+        </div>
+      </div>
+      <div class="app-box" role="listitem" tabindex="0" aria-label="LOKLOK">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO-1JM_3uZe3tbTeI6xfmTvs-NF3ObRBZfow&s">
+        <div class="app-title">LOKLOK</div>
+        <div class="app-actions">
+          <a class="btn" href="https://www.mediafire.com/file/xxnetknx9dlqv8m/Loklok_v3.13.1.apk/file" rel="noopener">Download</a>
+        </div>
+      </div>
+      
+      
+      <div class="app-box" role="listitem" tabindex="0" aria-label="Flexeon">
+        <img src="https://i.imgur.com/4sEmwCF.png" alt="Flexeon">
+        <div class="app-title">Flexeon</div>
+        <div class="app-actions">
+          <a class="btn" href="https://go.flixeon.me/dlv20" target="_blank" rel="noopener">Download</a>
+        </div>
+      </div>
+
+    
+  </main>
+</body>
+</html>
